@@ -1,0 +1,6 @@
+framework module TypicodeApiFramework {
+  umbrella header "TypicodeApiFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
