@@ -25,8 +25,7 @@
 		5D57540424197321007EEDB4 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57540324197321007EEDB4 /* UICollectionViewExtension.swift */; };
 		5D57558524198F66007EEDB4 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D57558424198F66007EEDB4 /* UIButtonExtension.swift */; };
 		5D575593241A8637007EEDB4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D575592241A8637007EEDB4 /* UIViewExtension.swift */; };
-		5D575661241AF1CA007EEDB4 /* ApiCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D575660241AF1CA007EEDB4 /* ApiCallTests.swift */; };
-		5D575663241AF3B6007EEDB4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D575662241AF3B6007EEDB4 /* Test.swift */; };
+		5D575673241B5D03007EEDB4 /* ApiCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D575671241B5D03007EEDB4 /* ApiCallTests.swift */; };
 		5D8AD95D2418188C007BB139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AD95C2418188C007BB139 /* AppDelegate.swift */; };
 		5D8AD95F2418188C007BB139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AD95E2418188C007BB139 /* SceneDelegate.swift */; };
 		5D8AD9642418188D007BB139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AD9622418188D007BB139 /* Main.storyboard */; };
@@ -80,8 +79,8 @@
 		5D57540324197321007EEDB4 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		5D57558424198F66007EEDB4 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		5D575592241A8637007EEDB4 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		5D575660241AF1CA007EEDB4 /* ApiCallTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCallTests.swift; sourceTree = "<group>"; };
-		5D575662241AF3B6007EEDB4 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		5D575671241B5D03007EEDB4 /* ApiCallTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCallTests.swift; sourceTree = "<group>"; };
+		5D575672241B5D03007EEDB4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D8AD9592418188C007BB139 /* tmc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8AD95C2418188C007BB139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D8AD95E2418188C007BB139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +89,6 @@
 		5D8AD9682418188E007BB139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D8AD96A2418188E007BB139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D8AD96F2418188F007BB139 /* tmcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D8AD9752418188F007BB139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D8AD97A2418188F007BB139 /* tmcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8AD97E2418188F007BB139 /* tmcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmcUITests.swift; sourceTree = "<group>"; };
 		5D8AD9802418188F007BB139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,15 +173,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5D575670241B5D03007EEDB4 /* tmcTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D575671241B5D03007EEDB4 /* ApiCallTests.swift */,
+				5D575672241B5D03007EEDB4 /* Info.plist */,
+			);
+			path = tmcTests;
+			sourceTree = "<group>";
+		};
 		5D8AD9502418188C007BB139 = {
 			isa = PBXGroup;
 			children = (
-				5D8AD95B2418188C007BB139 /* tmc */,
-				5D8AD9722418188F007BB139 /* tmcTests */,
-				5D8AD97D2418188F007BB139 /* tmcUITests */,
-				5D8AD95A2418188C007BB139 /* Products */,
-				102796325EA3274BD2A42C77 /* Pods */,
 				760D1DB4E2B1DE54C6A43ECA /* Frameworks */,
+				102796325EA3274BD2A42C77 /* Pods */,
+				5D8AD95A2418188C007BB139 /* Products */,
+				5D8AD95B2418188C007BB139 /* tmc */,
+				5D575670241B5D03007EEDB4 /* tmcTests */,
+				5D8AD97D2418188F007BB139 /* tmcUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,16 +215,6 @@
 				5D8AD98C241818E0007BB139 /* Views */,
 			);
 			path = tmc;
-			sourceTree = "<group>";
-		};
-		5D8AD9722418188F007BB139 /* tmcTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D575660241AF1CA007EEDB4 /* ApiCallTests.swift */,
-				5D8AD9752418188F007BB139 /* Info.plist */,
-				5D575662241AF3B6007EEDB4 /* Test.swift */,
-			);
-			path = tmcTests;
 			sourceTree = "<group>";
 		};
 		5D8AD97D2418188F007BB139 /* tmcUITests */ = {
@@ -567,8 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D575661241AF1CA007EEDB4 /* ApiCallTests.swift in Sources */,
-				5D575663241AF3B6007EEDB4 /* Test.swift in Sources */,
+				5D575673241B5D03007EEDB4 /* ApiCallTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,7 +789,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ul.tmcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "tmcTests/tmcTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -819,7 +815,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ul.tmcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "tmcTests/tmcTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tmc.app/tmc";
