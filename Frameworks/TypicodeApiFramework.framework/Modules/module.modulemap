@@ -1,0 +1,11 @@
+framework module TypicodeApiFramework {
+  umbrella header "TypicodeApiFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module TypicodeApiFramework.Swift {
+    header "TypicodeApiFramework-Swift.h"
+    requires objc
+}
