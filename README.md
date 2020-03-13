@@ -102,6 +102,8 @@ An example of the data that will be returned looks like this:
 
 **App bonus**
 
+Bonus part's repo: https://github.com/tlgtmc/TypicodeApiFramework
+
 1.  Create a new framework within a workspace, that also contains the iOS project that you have created previously (If you have chosen to use CocoaPods it may also contain the Pods project).
     
 2.  Migrate the code that that you have created for steps 1+2+5+6+10+11+12+16+17+18 by making it available through the framework only.
